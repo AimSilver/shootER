@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/bg.css" />
+    <link rel="stylesheet" href="./style/logic.css" />
+    <script src="/js/main.js" type="module" defer></script>
+  </head>
+  <body style="background-color: white">
+    <!-- game part html  -->
+
+    <div class="game">
+      <div class="sniper"></div>
+      <div class="bullet"></div>
+      <div class="target bouncing"></div>
+      <div class="scope"></div>
+      <div class="scope-zoom"></div>
+      <div class="collison">
+        <div class="collison-content">
+          <h2>You Won!</h2>
+          <br />
+          <p>
+            <button
+              class="reset"
+              style="
+                background-color: crimson;
+                border-radius: 20%;
+                color: white;
+              "
+            >
+              Play Again
+            </button>
+          </p>
+        </div>
+      </div>
+      <button class="fire">Fire</button>
+      <button class="reload">Reload</button>
+    </div>
+
+    <!-- parallex background part html  -->
+
+    <section class="home">
+      <!-- <img src="assests/new bg/night.png" alt="" class="night-bg" /> -->
+
+      <img src="assets/images/left cloud.png" alt="" class="left-cloud" />
+
+      <img src="assets/images/rigth cloud.png" alt="" class="right-cloud" />
+      <h1 class="title">ShootER</h1>
+      <img src="assets/images/land.png" alt="" class="land" />
+      <img src="assets/images/water.png" alt="" class="water" />
+    </section>
+    <section class="day">
+      <!-- <img
+        src="assests/new bg/morning cloud.png"
+        alt=""
+        class="morning-cloud"
+      /> -->
+      <img src="assets/images/morning sun.png" alt="" class="morning-sun" />
+      <h1 class="title2">ShootER</h1>
+
+      <img src="assets/images/morningland.png" alt="" class="morning-land" />
+      <img src="assets/images/water.png" alt="" class="morning-water" />
+    </section>
+  </body>
+</html>

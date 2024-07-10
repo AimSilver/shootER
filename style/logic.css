@@ -1,0 +1,112 @@
+.game {
+  width: 100%;
+  height: 100vh;
+  z-index: +2;
+  position: fixed;
+}
+
+.scope {
+  background-image: url(../assets/images/scope.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 65%;
+  left: 2.5%;
+}
+
+.sniper {
+  background-image: url(../assets/images/sniper.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 160px;
+  height: 80px;
+  position: absolute;
+  bottom: 48%;
+  z-index: +2;
+}
+.bullet {
+  background-image: url(../assets/images/bulletblack.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 33px;
+  height: 6px;
+  position: absolute;
+  bottom: 56.1%;
+  left: 10.5%;
+  z-index: +1;
+}
+.shoot {
+  animation: shoot 1s reverse;
+}
+.target {
+  background-image: url(../assets/images/3dball.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 56.1%;
+  right: 10.5%;
+  z-index: +1;
+}
+.target.collided {
+  background-image: url(../assets/images/blast.png);
+  width: 80px;
+  height: 100px;
+}
+.bouncing {
+  animation: bounce 1s linear infinite;
+}
+.collison {
+  background-color: cornsilk;
+  width: 250px;
+  height: 150px;
+  bottom: 40%;
+  position: absolute;
+  left: 40%;
+  border: outset;
+  border-width: 10px;
+  text-align: center;
+  visibility: hidden;
+}
+.collison-content {
+  position: absolute;
+  bottom: 35%;
+  left: 25%;
+}
+
+.fire {
+  position: absolute;
+  bottom: 28%;
+  left: 10%;
+  background-color: rgb(214, 47, 47);
+  width: 50px;
+  border: inset;
+  border-radius: 20%;
+  color: white;
+}
+.reload {
+  position: absolute;
+  bottom: 28%;
+  left: 2%;
+  background-color: rgb(214, 47, 47);
+  border: inset;
+  border-radius: 20%;
+  color: white;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    top: 30%;
+  }
+  50% {
+    top: 70%;
+  }
+}
+@keyframes shoot {
+  0% {
+    left: 100%;
+  }
+}
